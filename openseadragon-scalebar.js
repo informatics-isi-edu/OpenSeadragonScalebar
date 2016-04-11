@@ -381,11 +381,11 @@
             var newCanvas = document.createElement("canvas");
             newCanvas.width = imgCanvas.width;
             newCanvas.height = imgCanvas.height;
-            var newCtx = newCanvas.getContext("2d");
-            newCtx.drawImage(imgCanvas, 0, 0);
+            var newCtx = newCanvas.getContext('2d');
+            newCtx.drawImage(imgCanvas,0,0);
             var scalebarCanvas = this.getAsCanvas();
             var location = this.getScalebarLocation();
-            newCtx.drawImage(scalebarCanvas, location.x, location.y);
+            newCtx.drawImage(scalebarCanvas,location.x,location.y);
             return newCanvas;
         }
     };
